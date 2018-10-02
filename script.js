@@ -1,7 +1,7 @@
 const submit = document.getElementById("submit");
 const text = document.getElementById("text");
 const lower = document.getElementById("lower");
-const body = document.getElementsByTagName("body");
+const html = document.getElementsByTagName("html");
 
 submit.addEventListener("click", search);
 
@@ -10,6 +10,6 @@ function search(){
   text.style.transition = "all .3s ease-out";
   lower.style.margin = "10px auto";
   text.style.top = "10px";
-  body[0].style.backgroundColor = "lightblue";
+  html[0].style.backgroundImage = "linear-gradient(lightpink, lightblue)";
   console.log(document.getElementById("form").value);
 }

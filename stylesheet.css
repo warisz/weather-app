@@ -1,17 +1,24 @@
-html, body {margin: 0; background-color: lightpink; overflow-y:hidden;}
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: linear-gradient(lightblue, lightpink);
+  }
 
 #main{
   width: 100%;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 #text{
   flex:1;
   position: relative;
-  top: 170px;
+  top: 120px;
   color: #444;
   font-family: 'PT Sans', sans-serif;
   letter-spacing: 1.5px;
@@ -20,7 +27,7 @@ html, body {margin: 0; background-color: lightpink; overflow-y:hidden;}
 #lower{
   width: 50%;
   height: 60%;
-  margin: 200px auto;
+  margin: 150px auto;
 }
 
 #form{
@@ -31,7 +38,7 @@ html, body {margin: 0; background-color: lightpink; overflow-y:hidden;}
   font-size: 16px;
   font-family: 'PT Sans', sans-serif;
   background-color: white;
-  background-image: url('searchicon.png');
+  background-image: url('./images/searchicon.png');
   background-position: 10px 10px;
   background-size: 20px;
   background-repeat: no-repeat;
