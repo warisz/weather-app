@@ -1,11 +1,17 @@
 html {
     height: 100%;
+    max-width:100%;
+    overflow-x: hidden;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: linear-gradient(lightblue, lightpink);
+    background-image: linear-gradient(lightblue, white);
   }
+
+body{
+  position: relative;
+}
 
 #main{
   width: 100%;
@@ -20,8 +26,9 @@ html {
   position: relative;
   top: 120px;
   color: #444;
-  font-family: 'PT Sans', sans-serif;
-  letter-spacing: 1.5px;
+  font-family: 'Nunito Sans', sans-serif;
+
+
 }
 
 #lower{
@@ -63,4 +70,47 @@ html {
 
 #submit:hover{
   background-color: #83aff7;
+}
+
+@-webkit-keyframes moveRight{
+    from {
+        left:-160px;
+    }
+
+}
+
+@-webkit-keyframes moveLeft{
+    from {
+        right:-120px;
+    }
+}
+
+#cloud1{
+  position: absolute;
+  bottom: 25%;
+  left: 3%;
+  width: 20%;
+  height: 43%;
+  -webkit-animation: moveRight 10s linear;
+
+}
+
+#cloud1 img{
+  width:100%;
+  height: 100%;
+}
+
+#cloud2{
+  position: absolute;
+  bottom: 50%;
+  right: 2%;
+  width: 20%;
+  height: 43%;
+  -webkit-animation: moveLeft 10s linear;
+}
+
+#cloud2 img{
+  width: 100%;
+  height: 100%;
+  transform: rotate(175deg);
 }

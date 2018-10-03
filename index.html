@@ -5,16 +5,23 @@
     <script src="script.js" type="text/javascript" async defer></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
   </head>
 
   <body>
     <div id="main">
-      <h1 id="text">What city are you looking for?</h1>
+      <h1 id="text">What location are you looking for?</h1>
       <div id="lower">
-        <input id="form" type="text" name="city"></input>
+        <input id="form" type="text" name="city" autocomplete="off"></input>
         <button id="submit">Submit</button>
       </div>
     </div>
+
+    <div id="results"> </div>
+
+
+    <div id="cloud1"><img id="cloud1png" src='./images/cloud1.png' alt="cloud"></img></div>
+    <div id="cloud2"><img src='./images/cloud1.png' alt="cloud"></img></div>
   </body>
 
 
